@@ -1,7 +1,8 @@
 public class Odd_Characters {
     public static void main(String[] args) {
         String text = "type here to search";
-        oddPositionChars(text);
+        String cleanedText = text.replaceAll("\\s", "");
+        oddPositionChars(cleanedText);
     }
     
     public static void oddPositionChars(String str) {
